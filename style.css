@@ -115,8 +115,10 @@ section{
 }
 .rel{
 	position: relative;
+	overflow-y: hidden;
     padding: 60px 100px;
     width: 100vw;
+    min-height: 100vh;
 }
 
 /*HOME*/
@@ -140,9 +142,9 @@ section{
 	z-index: 11;
 	opacity: 1;
 	position: fixed;
-	right:-400px;
-	min-height:100vw;
-	min-width:100vw;
+	left:30vw;
+	min-height:1300px;
+	min-width:1300px;
 	animation: slowdown 120s linear 0s infinite alternate;
 }
 .biglogo svg {
@@ -249,6 +251,22 @@ section{
 	background-color: #E40066;
 	z-index: 100;
 }
+#work .rel{
+	z-index: 110;
+}
+#work .biglogo{
+	opacity: 1;
+	top:0;
+	position: absolute;
+	left:30vw;
+	min-height:1300px;
+	min-width:1300px;
+	animation: slowdown 120s linear 0s infinite alternate;
+}
+#work .biglogo svg {
+	color: #345995;
+	fill: currentColor;
+}
 
 /*CONTACT*/
 
@@ -296,9 +314,9 @@ section{
 	opacity: 1;
 	top:0;
 	position: absolute;
-	left:-200px;
-	min-height:100vw;
-	min-width:100vw;
+	left:30vw;
+	min-height:1300px;
+	min-width:1300px;
 	animation: slowdown 120s linear 0s infinite alternate;
 }
 #contact .biglogo svg {
