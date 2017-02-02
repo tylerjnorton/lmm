@@ -145,7 +145,7 @@ section{
 	left:30vw;
 	min-height:1300px;
 	min-width:1300px;
-	animation: slowdown 120s linear 0s infinite alternate;
+	animation: slowdown 60s linear 0s infinite alternate;
 }
 .biglogo svg {
 	color: #E40066;
@@ -261,7 +261,7 @@ section{
 	left:30vw;
 	min-height:1300px;
 	min-width:1300px;
-	animation: slowdown 120s linear 0s infinite alternate;
+	animation: slowdown 60s linear 0s infinite alternate;
 }
 #work .biglogo svg {
 	color: #345995;
@@ -279,6 +279,8 @@ section{
 }
 #contact .rel{
 	z-index: 210;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 .contactspot{
 	transform: translateX(60px) translateY(100px);
@@ -317,7 +319,7 @@ section{
 	left:30vw;
 	min-height:1300px;
 	min-width:1300px;
-	animation: slowdown 120s linear 0s infinite alternate;
+	animation: slowdown 60s linear 0s infinite alternate;
 }
 #contact .biglogo svg {
 	color: #E40066;
@@ -350,14 +352,14 @@ section{
 }
 @keyframes slowdown {
   0% {
-	transform: translateY(-30vw);
+	transform: translateY(-35vw);
 	opacity: 0;
   }
   2%{
   	opacity: .8;
   }
   100% {
-	transform: translateY(20vw);
+	transform: translateY(0vw);
   }
 }
 
