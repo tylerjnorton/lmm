@@ -136,14 +136,14 @@ section{
   	left: -50%;
 	transform: rotate(-45deg);
 }
-.biglogo{
+#home .biglogo{
 	z-index: 11;
 	opacity: 1;
 	position: fixed;
 	right:-400px;
 	min-height:100vw;
 	min-width:100vw;
-	animation: slowdown 60s linear 0s infinite alternate;
+	animation: slowdown 120s linear 0s infinite alternate;
 }
 .biglogo svg {
 	color: #E40066;
@@ -208,6 +208,9 @@ section{
 	background-color: #011627;
 	font-weight: 400;
 }
+#scrollformore a{
+	text-decoration: none;
+}
 #header{
 	position: fixed;
 	left:5vw;
@@ -250,13 +253,17 @@ section{
 /*CONTACT*/
 
 #contact{
-	background-color: #EAC435;
 	z-index: 200;
 	width:100vw;
+	background-color: #EAC435;
+	background-image: url(images/dots.svg);
+    background-size: 20px 20px;
 }
-
+#contact .rel{
+	z-index: 210;
+}
 .contactspot{
-	transform: rotate(-15deg) translateX(60px) translateY(100px);
+	transform: translateX(60px) translateY(100px);
 	width:75vw;
 }
 .contactspot h1{
@@ -275,12 +282,28 @@ section{
 	white-space:nowrap;
 	margin-bottom: 15px;
 	background-color: #345995;
+	transition: all .25s ease-in-out;
 }
 .contactspot h2:hover {
 	background-color: #E40066;
+	transition: all .25s ease-in-out;
 }
 .contactspot a{
 	text-decoration: none;
+}
+
+#contact .biglogo{
+	opacity: 1;
+	top:0;
+	position: absolute;
+	left:-200px;
+	min-height:100vw;
+	min-width:100vw;
+	animation: slowdown 120s linear 0s infinite alternate;
+}
+#contact .biglogo svg {
+	color: #E40066;
+	fill: currentColor;
 }
 
 /*ANIMATIONS*/
@@ -309,14 +332,14 @@ section{
 }
 @keyframes slowdown {
   0% {
-	transform: translateY(-50vw);
+	transform: translateY(-30vw);
 	opacity: 0;
   }
   2%{
   	opacity: .8;
   }
   100% {
-	transform: translateY(0vw);
+	transform: translateY(20vw);
   }
 }
 
