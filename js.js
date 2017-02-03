@@ -5,6 +5,28 @@ $('a').click(function(){
     return false;
 });
 
+// PORTFOLIO IMAGES
+
+ $('#workholder a').on('click', function(e){
+    e.preventDefault();
+    var id = (this.getAttribute('href'));
+    var $active = $('img.active');
+    $active.addClass('postactive');
+    $(id).addClass('active');
+    setTimeout(function () {
+        $active.removeClass('postactive active')
+    }, 500);
+}); 
+
+$(function() {
+    $("#workholder a").on("click", function(e) {
+        $(this).addClass("actproj").siblings().removeClass("actproj");
+    });
+})
+
+
+// PAGE FLIP CORRECTLY
+
 $(function() {
 
     // Set up vars
