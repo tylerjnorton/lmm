@@ -101,7 +101,9 @@ div[class^="nav-item-"]:hover  > .text {
 
 section{
 	min-height:100vh;
-	width:100vw;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	max-width:100vw;
 	position: relative;
 	-webkit-box-shadow: -1px -1px 11px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px -1px 11px -1px rgba(0,0,0,0.75);
@@ -118,7 +120,6 @@ section{
 }
 .rel{
 	position: relative;
-	overflow-y: hidden;
     padding: 60px 100px;
     width: 100vw;
     min-height: 100vh;
@@ -204,6 +205,7 @@ section{
 	z-index: 99;
 	bottom: 15vh;
 	right: 0;
+	cursor: default;
 	transform: rotate(90deg) translateX(0px);
 	animation: dropin 1s ease-in-out 0s 1, vertwiggle 3s ease-in-out 3s infinite;
 }
@@ -213,9 +215,7 @@ section{
 	background-color: #011627;
 	font-weight: 400;
 }
-#scrollformore a{
-	text-decoration: none;
-}
+
 #header{
 	position: fixed;
 	left:5vw;
@@ -306,8 +306,8 @@ section{
 	margin:5px;
  	position: relative;
   	perspective: 1000px;
-	height: 70vh;
-	width: 70vw;
+	width: 798px;
+	height:559px;
 	position: relative;
 }
 #treedhelper{
@@ -320,20 +320,21 @@ section{
 	margin: 0;
   	display: block;
   	position: absolute;
-	height: 70vh;
+  	backface-visibility: hidden;
+	width: 798px;
+	height:559px;
 	opacity: 0;
-	transform: rotateY(90deg) translateX(100%);
-	transition: transform .5s linear, opacity .1s linear .4s;
+	transform: rotateY(90deg) translateZ(399px) translateX(50%);
 }
 #treedhelper img.active{
 	opacity: 1;
-	transform: rotateY(0deg) translateX(0%);
+	transform: rotateY(0deg) translateZ(0vh) translateX(0%);
 	transition: transform .5s linear, opacity .1s linear .1s;
 }
 #treedhelper img.postactive{
 	opacity: 0;
-	transform: rotateY(-90deg) translateX(-100%);
-	transition: transform .5s linear, opacity .1s linear .4s;
+	transform: rotateY(-90deg)  translateZ(399px)  translateX(-50%);
+	transition: transform .5s linear, opacity .5s linear;
 }
 /*CONTACT*/
 
