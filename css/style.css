@@ -5856,7 +5856,7 @@ opacity:0
 #homewiggle{
     position: relative;
     z-index: 30;
-    height: 40px;
+    height: 10px;
     width: 250px;
     overflow: hidden;
 }
