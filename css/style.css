@@ -5856,12 +5856,8 @@ opacity:0
 #homewiggle{
     position: relative;
     z-index: 30;
-<<<<<<< HEAD
-    height: 40px;
-=======
     height: 10px;
->>>>>>> master
-    width: 250px;
+    width: 252px;
     overflow: hidden;
 }
 #homewiggle span{
