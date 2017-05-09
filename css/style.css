@@ -1669,21 +1669,21 @@ section {
 
 .clr-rose-bg h1, .clr-rose-bg h2, .clr-rose-bg h3, .clr-rose-bg h4, .clr-rose-bg h5, .clr-rose-bg h6, .clr-rose-bg .feature-style-1 .ft-txt-4 span, 
 .clr-skyblue-bg .feature-style-2 .ft-txt-4 span  { color: #ffffff; }
-.clr-rose-bg p, .clr-rose-bg .feature-style-1 p, .clr-rose-bg .feature-style-2 p, .clr-rose-bg .list-style-2 li a, .clr-rose-bg .list-style-2 i { color: #ffd4da; }
+.clr-rose-bg p, .clr-rose-bg .feature-style-1 p, .clr-rose-bg .feature-style-2 p, .clr-rose-bg .list-style-2 li, .clr-rose-bg .list-style-2 i { color: #ffd4da; }
 
 /*Dark text color*/
-.clr-skyblue-bg p, .clr-skyblue-bg .feature-style-1 p, .clr-skyblue-bg .feature-style-2 p, .clr-skyblue-bg .list-style-2 li a, .clr-skyblue-bg .list-style-2 i,
-.clr-green-bg p, .clr-green-bg .feature-style-1 p, .clr-green-bg .feature-style-2 p, .clr-green-bg .list-style-2 li a, .clr-green-bg .list-style-2 i,
-.clr-yellow-bg p, .clr-yellow-bg .feature-style-1 p, .clr-yellow-bg .feature-style-2 p, .clr-yellow-bg .list-style-2 li a, .clr-yellow-bg .list-style-2 i
+.clr-skyblue-bg p, .clr-skyblue-bg .feature-style-1 p, .clr-skyblue-bg .feature-style-2 p, .clr-skyblue-bg .list-style-2 li, .clr-skyblue-bg .list-style-2 i,
+.clr-green-bg p, .clr-green-bg .feature-style-1 p, .clr-green-bg .feature-style-2 p, .clr-green-bg .list-style-2 li, .clr-green-bg .list-style-2 i,
+.clr-yellow-bg p, .clr-yellow-bg .feature-style-1 p, .clr-yellow-bg .feature-style-2 p, .clr-yellow-bg .list-style-2 li, .clr-yellow-bg .list-style-2 i
 
 { color: #141415; }
 
-.clr-skyblue-bg .list-style-2 li a:hover, 
-.clr-green-bg .list-style-2 li a:hover, 
-.clr-yellow-bg .list-style-2 li a:hover, 
-.clr-skyblue-bg .list-style-2 li a:hover i,
-.clr-green-bg .list-style-2 li a:hover i,
-.clr-yellow-bg  .list-style-2 li a:hover i { color: #000; }
+.clr-skyblue-bg .list-style-2 li:hover, 
+.clr-green-bg .list-style-2 li:hover, 
+.clr-yellow-bg .list-style-2 li:hover, 
+.clr-skyblue-bg .list-style-2 li:hover i,
+.clr-green-bg .list-style-2 li:hover i,
+.clr-yellow-bg  .list-style-2 li:hover i { color: #000; }
 
 
 .top-inner-bg {
@@ -2258,13 +2258,13 @@ section.servie_area {
 
 .list-style-2 em { border-bottom: 1px solid #eeeeee; display: inline-block; font-size: 13px; font-weight: 600; margin: 6px 20px; text-align: center; width: 20px; }
 
-.list-style-2 li a img { padding-right: 12px; width: auto !important; }
+.list-style-2 li img { padding-right: 12px; width: auto !important; }
 
-.list-style-2 li a { color: #686b70; display: block; font-size: 16px; font-weight: 300; padding: 7px 0 7px 0; }
+.list-style-2 li { color: #686b70; display: block; font-size: 16px; font-weight: 300; padding: 7px 0 7px 0; }
 
-.list-style-2 li a:hover { color: #f1c40f; }
+.list-style-2 li:hover { color: #f1c40f; }
 
-.list-style-2 li a:hover i { color: #f1c40f; }
+.list-style-2 li:hover i { color: #f1c40f; }
 
 .list-style-3 { display: block; margin: 0 0 30px; list-style-position: inside; }
 
