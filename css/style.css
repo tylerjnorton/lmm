@@ -4623,7 +4623,7 @@ textarea {
 .no-space .pitem {
     padding: 0;
 }
-.da-thumbs .pitem a, .da-thumbs .pitem a img {
+.da-thumbs .pitem a, .da-thumbs .pitem a img, .da-thumbs .pitem a, .da-thumbs .pitem a video {
     display: block;
     position: relative;
 }
